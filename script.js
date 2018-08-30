@@ -2,6 +2,8 @@ function myFunction(idButton) {
   var producto1 = document.getElementById('producto1');
   var producto2 = document.getElementById('producto2');
   var producto3 = document.getElementById('producto3');
+  var producto4 = document.getElementById('producto4');
+  var producto5 = document.getElementById('producto5');
 
 
 
@@ -11,18 +13,40 @@ function myFunction(idButton) {
           producto1.style.display = 'block';
           producto2.style.display = 'none';
           producto3.style.display = 'none';
+          producto4.style.display = 'none';
+          producto5.style.display = 'none';
     break;
 
  case 2:
           producto1.style.display = 'none';
           producto2.style.display = 'block';
           producto3.style.display = 'none';
+          producto4.style.display = 'none';
+          producto5.style.display = 'none';
     break;
 
  case 3:
           producto1.style.display = 'none';
           producto2.style.display = 'none';
           producto3.style.display = 'block';
+          producto4.style.display = 'none';
+          producto5.style.display = 'none';
+    break;
+     
+ case 4:
+          producto1.style.display = 'none';
+          producto2.style.display = 'none';
+          producto3.style.display = 'none';
+          producto4.style.display = 'block';
+          producto5.style.display = 'none';
+    break;
+     
+ case 5:
+          producto1.style.display = 'none';
+          producto2.style.display = 'none';
+          producto3.style.display = 'none';
+          producto4.style.display = 'none';
+          producto5.style.display = 'block';
     break;
 
 default:
