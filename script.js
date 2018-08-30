@@ -1,30 +1,32 @@
-var div1;
-var div2;
-var div3;
+function myFunction(idButton) {
+  var producto1 = document.getElementById('producto1');
+  var producto2 = document.getElementById('producto2');
+  var producto3 = document.getElementById('producto3');
 
-window.onload = function(){
-       div1 = document.getElementById("div1");
-       div2 = document.getElementById("div2");
-       div3 = document.getElementById("div3");
-       
-       var bt1 = document.getElementById("bt1");
-       bt1.onclick = mostrarDiv1;
-       var bt2 = document.getElementById("bt2");
-       bt2.onclick = mostrarDiv2;
-       var bt3 = document.getElementById("bt3");
-       bt3.onclick = mostrarDiv3;
-  
-       div1.classList.add("escondido");
-       div2.classList.add("escondido");
-       div3.classList.add("escondido");
-}
 
-function mostrarDiv1(){
-  
-}
-function mostrarDiv2(){
 
-}
-function mostrarDiv3(){
+ switch(idButton) {
+ case 1:
 
-}
+          producto1.style.display = 'block';
+          producto2.style.display = 'none';
+          producto3.style.display = 'none';
+    break;
+
+ case 2:
+          producto1.style.display = 'none';
+          producto2.style.display = 'block';
+          producto3.style.display = 'none';
+    break;
+
+ case 3:
+          producto1.style.display = 'none';
+          producto2.style.display = 'none';
+          producto3.style.display = 'block';
+    break;
+
+default:
+          alert("hay un problema: No existe el producto.")
+        }
+
+   }

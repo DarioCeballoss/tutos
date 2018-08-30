@@ -10,18 +10,43 @@
   
   
   <body>
-      <button id="bt1">Div 1</button>
-      <button id="bt2">Div 2</button>
-      <button id="bt3">Div 3</button>
-         <br><br>
-      <div id="div1">
-      Div 1  
-      </div>
-      <div id="div2">
-      Div 2
-      </div>
-      <div id="div3">
-      Div 3  
-      </div>
+      <button id="bt1" onclick="myFunction(1)">Producto1</button>
+      <button id="bt2" onclick="myFunction(2)">producto2</button>
+      <button id="bt3" onclick="myFunction(3)">Producto3</button>
+         
+    <br><br>
+
+<li onclick="myFunction(1)">Producto1</li>
+<li onclick="myFunction(2)">Producto2</li>
+<li onclick="myFunction(3)">Producto3</li>
+    
+<!-- los de aquí arriba serían los botones yo quice hacerlo con li -->
+
+<div id="producto1" style="display:none;">
+   <div class="tituloDiv">
+      <h3>Producto1</h3>
+   </div>
+   <div class="contenidoDiv">
+      <p>Descripción producto1.</p>
+   </div>
+</div>
+
+<div id="producto2" style="display:none;">
+     <div class="tituloDiv">
+        <h3>Producto2</h3>
+     </div>
+     <div class="contenidoDiv">
+        <p>Descripción producto2.</p>
+     </div>
+</div>
+
+<div id="producto3" style="display:none;">
+    <div class="tituloDiv">
+         <h3>Producto3</h3>
+    </div>
+    <div class="contenidoDiv">
+        <p>Descripción producto3.</p>
+    </div>
+</div>
   </body>
 </html>
